@@ -1,0 +1,4 @@
+comment code
+explain briefly in documentation the steps in kernel for TCP
+reARP victims with correct values on SIGINT
+rename symbols with correct PDU. (Ex: ethernet_packet -> ethernet_frame)
