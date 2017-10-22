@@ -1,4 +1,4 @@
-comment code
-explain briefly in documentation the steps in kernel for TCP
+replace if_nametoindex with a direct ioctl() call
 reARP victims with correct values on SIGINT
 rename symbols with correct PDU. (Ex: ethernet_packet -> ethernet_frame)
+comment code?
