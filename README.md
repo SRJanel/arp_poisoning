@@ -1,5 +1,5 @@
 # ARP Poisoning
-An ARP Poisoning tool in C using raw Data Link Layer sockets.
+An ARP Poisoning tool in C using raw Data Link Layer sockets.  
 This tool was coded during a live coding session for the Astek Lab at Epitech and was slightly modified afterwards.
 ***
 
