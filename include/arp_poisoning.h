@@ -5,13 +5,11 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Wed Feb 22 21:03:39 2017 Janel
-** Last update Mon Feb 27 03:35:42 2017 Janel
+** Last update Sun Oct 22 23:17:10 2017 
 */
 
 #ifndef ARP_POISONING_H_
 # define ARP_POISONING_H_
-
-# include <stdint.h>
 
 # define FALSE				0
 # define TRUE				!FALSE

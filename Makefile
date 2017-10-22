@@ -5,7 +5,7 @@
 ## Login   <gianne_n@epitech.net>
 ##
 ## Started on  Tue Jul 12 14:07:56 2017 Janel
-## Last update Mon Feb 27 03:14:59 2017 Janel
+## Last update Sun Oct 22 23:15:41 2017 
 ##
 
 SRC	= src/main.c \
@@ -22,7 +22,7 @@ RM	= rm -f
 
 CC	= gcc
 
-CFLAGS	= -std=c99 -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror
 CFLAGS	+= -pedantic-errors
 CFLAGS	+= -I./include
 

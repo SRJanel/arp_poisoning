@@ -5,13 +5,14 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Thu Feb 23 15:26:13 2017 Janel
-** Last update Tue Feb 28 18:23:33 2017 Janel
+** Last update Sun Oct 22 23:15:12 2017 
 */
 
 #include <stdlib.h>
 #include <string.h>
 #include <arpa/inet.h>
 #include <netinet/ip.h>
+#include <net/ethernet.h>
 #include "packets.h"
 
 t_arp_packet	*create_arp_packet(const uint16_t opcode,

@@ -5,7 +5,7 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Thu Feb 23 15:22:01 2017 Janel
-** Last update Tue Feb 28 18:27:56 2017 Janel
+** Last update Sun Oct 22 23:16:54 2017 
 */
 
 #include <stdio.h>
@@ -15,6 +15,8 @@
 #include <stdlib.h>
 #include <netinet/ip.h>
 #include <arpa/inet.h>
+#include <net/if_arp.h>
+#include <net/ethernet.h>
 #include "arp_poisoning.h"
 #include "error_messages.h"
 #include "packets.h"

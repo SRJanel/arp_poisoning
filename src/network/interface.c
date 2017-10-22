@@ -5,7 +5,7 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Thu Feb 23 15:00:25 2017 Janel
-** Last update Mon Feb 27 03:29:25 2017 Janel
+** Last update Sun Oct 22 23:53:08 2017 
 */
 
 #include <stdlib.h>
@@ -14,7 +14,7 @@
 #include <sys/ioctl.h>
 #include <net/if.h>
 #include <netinet/ip.h>
-#include <linux/if_arp.h>
+#include <net/if_arp.h>
 #include "arp_poisoning.h"
 #include "network.h"
 

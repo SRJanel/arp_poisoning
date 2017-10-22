@@ -5,7 +5,7 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Thu Feb 23 14:49:38 2017 Janel
-** Last update Mon Feb 27 03:25:22 2017 Janel
+** Last update Sun Oct 22 23:49:02 2017 
 */
 
 #include <stdio.h>
@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
-#include <linux/if_ether.h>
+#include <netinet/if_ether.h>
 #include "arp_poisoning.h"
 #include "network.h"
 #include "error_messages.h"

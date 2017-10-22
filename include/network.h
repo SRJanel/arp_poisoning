@@ -5,15 +5,14 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Wed Feb 22 21:02:29 2017 Janel
-** Last update Tue Feb 28 18:22:03 2017 Janel
+** Last update Sun Oct 22 23:16:39 2017 
 */
 
 #ifndef NETWORK_H_
 # define NETWORK_H_
 
 # include <sys/socket.h>
-# include <linux/if_arp.h>
-
+# include <netpacket/packet.h>
 # define HARDWARE_LENGTH	6
 # define IP_LENGTH		4
 # define BROADCAST_ADDR		(uint8_t[6]){0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}
