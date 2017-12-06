@@ -1,6 +1,6 @@
 # ARP Poisoning
 An ARP Poisoning tool in C using raw L2 sockets.  
-This tool was coded during a *live coding session* for the Astek Lab at Epitech and was slightly modified afterwards.
+This tool was coded during a **live coding session** for the Astek Lab at Epitech and was slightly modified afterwards.
 ***
 
 ## Overview
