@@ -1,7 +1,6 @@
 # ARP Poisoning
 An ARP Poisoning tool in C by using only libc.  
 This tool was coded during a **live coding session** for the Astek Lab at Epitech (and was slightly modified afterwards).  
-**Epitech students: Please note that this project has been scanned/imported into Epitech's moulitriche system. Copying any parts of it might result in a -84 or -42 mark during evaluation.**
 ***
 
 ## Overview
